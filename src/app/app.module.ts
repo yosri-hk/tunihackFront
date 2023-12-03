@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
 import { MailVerifComponent } from './mail-verif/mail-verif.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavComponent } from './nav/nav.component';
+import { NavDashboardComponent } from './nav-dashboard/nav-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SignupComponent,
     SigninComponent,
     MailVerifComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavComponent,
+    NavDashboardComponent
   ],
   imports: [
     BrowserModule,

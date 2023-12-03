@@ -1,46 +1,87 @@
-<nav class="navbar navbar-expand-lg bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav d-flex justify-content-between"> <!-- Added justify-content-between class here -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ask For Donation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Rewards</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<app-nav-dashboard></app-nav-dashboard>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-  <div class="page-header clear-filter" filter-color="orange">
-    <div class="page-header-image" style="background-image:url(../assets/img/header.jpg)"></div>
-    <div class="content">
-      <div class="container">
-        <div class="posts-section"> <!-- Ajoutez une classe pour la section des publications -->
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="card mb-3" *ngFor="let post of posts">
-                <div class="card-body">
-                  <h5 class="card-title">{{ post.title }}</h5>
-                  <p class="card-text">{{ post.content }}</p>
-                </div>
-              </div>
+
+
+<div class="row">
+    <div class="col-4" style="padding-left: 5%;">
+        <div class="card" style="width: 20rem; ">
+            <img class="card-img-top" src="https://t4.ftcdn.net/jpg/04/83/90/95/360_F_483909569_OI4LKNeFgHwvvVju60fejLd9gj43dIcd.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Welcome Back !</h4>
+              <p class="card-text">{{ user.firstName }} {{ user.lastName }}</p>
+              <a href="#" class="btn btn-primary">Visit Shop</a>
             </div>
           </div>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="col">
+        <div class="card" style="width: 50rem; ">
+            <div class="card-header">
+                <h3 style="padding: 2%;" class="text-center">Call For action</h3>
+            </div>
+            <div *ngFor="let demande of demandes">
+                <div class="card-body" style="padding: 3%;">
+                    <h4 class="card-title"></h4>
+                    <div class="row">
+                        <div class="col">
+                            <p class="card-text text-left">{{ user.Bloodtype }} blood donation at {{ user.firstName }} {{ user.lastName }} hospital</p>
+
+                        </div>
+                        <div class="col">                    <p class="card-text text-right">{{ user.ville}}</p>
+                            
+                        </div>
+                        <span class="badge badge-default">Non Urgent</span>
+                    </div>
+
+                    <button class="btn btn-danger btn-icon btn-round" type="button">
+                        <i class="now-ui-icons arrows-1_minimal-right
+                        "></i>
+                        </button>&nbsp;&nbsp;
+                        <button class="btn btn-default btn-icon btn-round" type="button">
+                            <i class="now-ui-icons files_single-copy-04
+
+                            "></i>
+                            </button>
+                    </div>
+                 
+                       
+                  
+                  
+            </div>
+            
+          </div>
+    </div>
+    
+</div>
   
+    <footer class="footer footer-default">
+    <div class=" container ">
+    <nav>
+    <ul>
+    <li>
+    <a href="https://www.creative-tim.com">
+    Creative Tim
+    </a>
+    </li>
+    <li>
+    <a href="http://presentation.creative-tim.com">
+    About Us
+    </a>
+    </li>
+    <li>
+    <a href="http://blog.creative-tim.com">
+    Blog
+    </a>
+    </li>
+    </ul>
+    </nav>
+    <div class="copyright" id="copyright">
+    © <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>2023, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+    </div>
+    </div>
+    </footer>
+   
