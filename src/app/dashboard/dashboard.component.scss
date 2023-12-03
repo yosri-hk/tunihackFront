@@ -1,0 +1,16 @@
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure the navbar items cover the entire width */
+    color: red;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px; /* Adjust the margin as needed for the desired space */
+  }
+  .posts-section {
+    background-color: white; /* Couleur de fond blanche */
+    padding: 20px; /* Espacement pour un meilleur aspect visuel */
+    border-radius: 10px; /* Facultatif : bordures arrondies */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Effet d'ombre pour séparer du fond */
+  }
